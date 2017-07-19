@@ -151,7 +151,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Load Widgets file.
  */
-if ( defined('WIDGETS__VERSION')) {
+if ( defined( 'WIDGETS__VERSION' ) ) {
 	require get_template_directory() . '/inc/widgets.php';
 }
 
