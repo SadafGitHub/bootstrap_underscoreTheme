@@ -9,7 +9,15 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+<div class="entry-thumb">
+<a href="<?php the_permalink(); ?>" rel="bookmark"
+title="Permanent Link to <?php the_title_attribute(); ?>">
+<?php
+if (has_post_thumbnail()) {
+	the_post_thumbnail();# code...
+} ?>
+</a></div>
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :

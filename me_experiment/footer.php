@@ -22,7 +22,7 @@
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'me_experiment' ), 'me_experiment', '<a href="https://automattic.com/">Sadaf Anjum</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'me_experiment' ), 'me_experiment', '<a href="https://www.linkedin.com/in/sadaf-anjum-07011a8b/">Sadaf Anjum</a>' );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

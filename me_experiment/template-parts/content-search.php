@@ -10,6 +10,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div class="entry-thumb">
+<a href="<?php the_permalink(); ?>" rel="bookmark"
+title="Permanent Link to <?php the_title_attribute(); ?>">
+<?php
+if (has_post_thumbnail()) {
+	the_post_thumbnail();# code...
+} ?>
+</a></div>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
