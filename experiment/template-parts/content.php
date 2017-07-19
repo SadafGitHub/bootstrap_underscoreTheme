@@ -28,7 +28,7 @@ if (has_post_thumbnail()) {
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php me_experiment_posted_on(); ?>
+			<?php experiment_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
@@ -39,7 +39,7 @@ if (has_post_thumbnail()) {
 			the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'me_experiment' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'experiment' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -50,13 +50,13 @@ if (has_post_thumbnail()) {
 			) );
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'me_experiment' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'experiment' ),
 				'after'  => '</div>',
 			) );
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php me_experiment_entry_footer(); ?>
+		<?php experiment_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

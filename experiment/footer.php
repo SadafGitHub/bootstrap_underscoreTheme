@@ -15,14 +15,14 @@
 
 	<footer id="colophon" class="site-footer row">
 		<div class="site-info col-md-12">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'me_experiment' ) ); ?>"><?php
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'experiment' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'me_experiment' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'experiment' ), 'WordPress' );
 			?></a>
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'me_experiment' ), 'me_experiment', '<a href="https://www.linkedin.com/in/sadaf-anjum-07011a8b/">Sadaf Anjum</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'experiment' ), 'experiment', '<a href="https://www.linkedin.com/in/sadaf-anjum-07011a8b/">Sadaf Anjum</a>' );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Template part for displaying page content in page.php
@@ -27,7 +28,7 @@ if (has_post_thumbnail()) {
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'me_experiment' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'experiment' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -40,7 +41,7 @@ if (has_post_thumbnail()) {
 					sprintf(
 						wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Edit <span class="screen-reader-text">%s</span>', 'me_experiment' ),
+							__( 'Edit <span class="screen-reader-text">%s</span>', 'experiment' ),
 							array(
 								'span' => array(
 									'class' => array(),

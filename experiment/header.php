@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site container">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'me_experiment' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'experiment' ); ?></a>
 
 	<header id="masthead" class="site-header row">
 		<div class="site-branding col-md-4">
@@ -43,7 +43,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation col-md-8">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'me_experiment' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'experiment' ); ?></button>
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
