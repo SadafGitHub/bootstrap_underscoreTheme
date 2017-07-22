@@ -42,7 +42,7 @@ add_action( 'after_setup_theme', 'experiment_jetpack_setup' );
 /**
  * Custom render function for Infinite Scroll.
  */
-function me_experiment_infinite_scroll_render() {
+function experiment_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

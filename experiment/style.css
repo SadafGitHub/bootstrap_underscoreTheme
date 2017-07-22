@@ -97,6 +97,7 @@ a {
 a:active,
 a:hover {
 	outline: 0;
+	color: #666
 }
 
 abbr[title] {
@@ -144,6 +145,8 @@ sub {
 
 img {
 	border: 0;
+	height: 800;
+	width: 1000;
 }
 
 svg:not(:root) {
@@ -512,7 +515,7 @@ a {
 }
 
 a:visited {
-	color: purple;
+	color: black;
 }
 
 a:hover,
@@ -538,7 +541,12 @@ a:active {
 	display: block;
 	float: left;
 	width: 100%;
+    background-color: #402bfc;
+    font-size: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
 
 .main-navigation ul {
 	display: none;
@@ -644,6 +652,16 @@ a:active {
 	width: 50%;
 }
 
+.navbar-collapse.collapse {
+    display: block;
+    height: auto;
+    overflow: visible;
+    background-color: blue;
+    font-size: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -664,8 +682,8 @@ a:active {
 	clip: auto !important;
 	color: #21759b;
 	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 20px;
+	font-size: 1rem;
 	font-weight: bold;
 	height: auto;
 	left: 5px;
@@ -731,6 +749,7 @@ a:active {
 .site-content:after,
 .site-footer:after {
 	clear: both;
+	color: red;
 }
 
 /*--------------------------------------------------------------
@@ -895,8 +914,17 @@ object {
 	display: block;
 }
 
+.site-title {
+	font-size: 30px;
+}
+
+.container-fluid{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 #content {
-	background: #ccc;
-	padding: 30px;
+	background: transparent;
+	padding: 20px;
 
 }

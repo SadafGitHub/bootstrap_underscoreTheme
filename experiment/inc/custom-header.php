@@ -14,7 +14,7 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses me_experiment_header_style()
+ * @uses experiment_header_style()
  */
 function experiment_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'experiment_custom_header_args', array(

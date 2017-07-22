@@ -105,6 +105,8 @@ add_action( 'after_setup_theme', 'experiment_content_width', 0 );
 function experiment_scripts() {
 	wp_enqueue_style('experiment_bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css');
 
+	wp_enqueue_style('experiment_bootstrap_css', get_template_directory_uri() . '/css/bootstrap.css');
+
 	wp_enqueue_style( 'experiment-style', get_stylesheet_uri() );
 
 	wp_enqueue_script('jquery');
@@ -120,6 +122,21 @@ function experiment_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'experiment_scripts' );
+
+/**
+ * Register Nav walker class_alias
+ */
+require_once('wp-bootstrap-navwalker.php');
+
+// Theme Support
+function experiment_theme_setup(){
+	register_nav_menus(array (
+		'primary' => __('Primary Menu') ,
+		'secondary' => __('Secondary Menu')
+		));
+}
+
+add_action('after_setup_theme','experiment_theme_setup');
 
 /**
  * Implement the Custom Header feature.
@@ -151,9 +168,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Load Widgets file.
  */
-if ( defined( 'WIDGETS__VERSION' ) ) {
+//if ( defined( 'WIDGETS__VERSION' ) ) {
 	require get_template_directory() . '/inc/widgets.php';
-}
+//}
 
 
 
